@@ -59,6 +59,16 @@ namespace ObjectOrientedPractics.Model
         }
 
         /// <summary>
+        /// Возвращает и задает корзину пользователя.
+        /// </summary>
+        public Cart Cart { get; set; }
+
+        /// <summary>
+        /// Возвращает и задает список заказов пользователя.
+        /// </summary>
+        public List<Order> Orders { get; set; }
+
+        /// <summary>
         /// Создает экземпляр <see cref="Customer"/>.
         /// </summary>
         public Customer()
@@ -77,6 +87,8 @@ namespace ObjectOrientedPractics.Model
             Fullname = fullname;
             Address = address;
             _id = IdGenerator.GetNextId();
+            Cart = new Cart();
+            Orders = new List<Order>();
         }
     }
 }

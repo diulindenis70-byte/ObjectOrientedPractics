@@ -34,21 +34,30 @@
             itemsTab1 = new ObjectOrientedPractics.View.Tabs.ItemsTab();
             tabPage1 = new TabPage();
             customersTab1 = new ObjectOrientedPractics.View.Tabs.CustomersTab();
+            tabPage3 = new TabPage();
+            tabPage4 = new TabPage();
+            cartsTab1 = new ObjectOrientedPractics.View.Tabs.CartsTab();
+            ordersTab1 = new ObjectOrientedPractics.View.Tabs.OrdersTab();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
             tabPage1.SuspendLayout();
+            tabPage3.SuspendLayout();
+            tabPage4.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
             // 
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage3);
+            tabControl1.Controls.Add(tabPage4);
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(910, 563);
             tabControl1.TabIndex = 0;
+            tabControl1.SelectedIndexChanged += tabControl1_SelectedIndexChanged;
             // 
             // tabPage2
             // 
@@ -89,19 +98,63 @@
             customersTab1.Size = new Size(896, 524);
             customersTab1.TabIndex = 0;
             // 
+            // tabPage3
+            // 
+            tabPage3.Controls.Add(cartsTab1);
+            tabPage3.Location = new Point(4, 29);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(902, 530);
+            tabPage3.TabIndex = 3;
+            tabPage3.Text = "Cart";
+            tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            tabPage4.Controls.Add(ordersTab1);
+            tabPage4.Location = new Point(4, 29);
+            tabPage4.Name = "tabPage4";
+            tabPage4.Padding = new Padding(3);
+            tabPage4.Size = new Size(902, 530);
+            tabPage4.TabIndex = 4;
+            tabPage4.Text = "Orders";
+            tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // cartsTab1
+            // 
+            cartsTab1.Customers = null;
+            cartsTab1.Dock = DockStyle.Fill;
+            cartsTab1.Items = null;
+            cartsTab1.Location = new Point(3, 3);
+            cartsTab1.Margin = new Padding(4, 5, 4, 5);
+            cartsTab1.Name = "cartsTab1";
+            cartsTab1.Size = new Size(896, 524);
+            cartsTab1.TabIndex = 0;
+            // 
+            // ordersTab1
+            // 
+            ordersTab1.Customers = null;
+            ordersTab1.Dock = DockStyle.Fill;
+            ordersTab1.Location = new Point(3, 3);
+            ordersTab1.Margin = new Padding(4, 5, 4, 5);
+            ordersTab1.Name = "ordersTab1";
+            ordersTab1.Size = new Size(896, 524);
+            ordersTab1.TabIndex = 0;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(910, 563);
             Controls.Add(tabControl1);
-            Cursor = Cursors.Default;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
             Text = "Object Oriented Practics";
             tabControl1.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
+            tabPage3.ResumeLayout(false);
+            tabPage4.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -112,5 +165,9 @@
         private View.Tabs.ItemsTab itemsTab1;
         private TabPage tabPage1;
         private View.Tabs.CustomersTab customersTab1;
+        private TabPage tabPage3;
+        private TabPage tabPage4;
+        private View.Tabs.CartsTab cartsTab1;
+        private View.Tabs.OrdersTab ordersTab1;
     }
 }

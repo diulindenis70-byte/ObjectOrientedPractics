@@ -22,46 +22,17 @@ namespace ObjectOrientedPractics.View.Controls
         {
             get
             {
-                if (_address == null)
-                {
-                    _address = new Address();
-                }
-
-                if (int.TryParse(PostIndexTextBox.Text, out int index) && index >= 100000 && index <= 999999)
-                {
-                    _address.Index = index;
-                }
-
-                if (CountryTextBox.Text.Length <= 50)
-                {
-                    _address.Country = CountryTextBox.Text;
-                }
-
-                if (CityTextBox.Text.Length <= 50)
-                {
-                    _address.City = CityTextBox.Text;
-                }
-
-                if (StreetTextBox.Text.Length <= 100)
-                {
-                    _address.Street = StreetTextBox.Text;
-                }
-
-                if (BuildingTextBox.Text.Length <= 10)
-                {
-                    _address.Building = BuildingTextBox.Text;
-                }
-
-                if (ApartmentTextBox.Text.Length <= 10)
-                {
-                    _address.Apartment = ApartmentTextBox.Text;
-                }
+                _address.Index = Convert.ToInt32(PostIndexTextBox.Text);
+                _address.Country = CountryTextBox.Text;
+                _address.City = CityTextBox.Text;
+                _address.Street = StreetTextBox.Text;
+                _address.Building = BuildingTextBox.Text;
+                _address.Apartment = ApartmentTextBox.Text;
 
                 return _address;
             }
             set
             {
-                _address = value ?? new Address();
                 UpdateAddressInfo();
             }
         }
@@ -111,6 +82,9 @@ namespace ObjectOrientedPractics.View.Controls
             AddressToolTip.RemoveAll();
         }
 
+        /// <summary>
+        /// Проверяет текст введённый в строку индекса. 
+        /// </summary>
         private void PostIndexTextBox_TextChanged(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(PostIndexTextBox.Text))
@@ -137,6 +111,9 @@ namespace ObjectOrientedPractics.View.Controls
             }
         }
 
+        /// <summary>
+        /// Проверяет текст введённый в строку страны/регион. 
+        /// </summary>
         private void CountryTextBox_TextChanged(object sender, EventArgs e)
         {
             try
@@ -152,6 +129,9 @@ namespace ObjectOrientedPractics.View.Controls
             }
         }
 
+        /// <summary>
+        /// Проверяет текст введённый в строку города. 
+        /// </summary>
         private void CityTextBox_TextChanged(object sender, EventArgs e)
         {
             try
@@ -167,6 +147,9 @@ namespace ObjectOrientedPractics.View.Controls
             }
         }
 
+        /// <summary>
+        /// Проверяет текст введённый в строку улицы. 
+        /// </summary>
         private void StreetTextBox_TextChanged(object sender, EventArgs e)
         {
             try
@@ -182,6 +165,9 @@ namespace ObjectOrientedPractics.View.Controls
             }
         }
 
+        /// <summary>
+        /// Проверяет текст введённый в строку номера дома. 
+        /// </summary>
         private void BuildingTextBox_TextChanged(object sender, EventArgs e)
         {
             try
@@ -197,6 +183,9 @@ namespace ObjectOrientedPractics.View.Controls
             }
         }
 
+        /// <summary>
+        /// Проверяет текст введённый в строку номера квартиры/помещения. 
+        /// </summary>
         private void ApartmentTextBox_TextChanged(object sender, EventArgs e)
         {
             try
@@ -210,6 +199,20 @@ namespace ObjectOrientedPractics.View.Controls
                 ApartmentTextBox.BackColor = Color.LightPink;
                 AddressToolTip.SetToolTip(ApartmentTextBox, ex.Message);
             }
+        }
+
+        /// <summary>
+        /// Задает режим работы текстовых полей (только для чтения или редактируемые).
+        /// </summary>
+        /// <param name="isReadOnly">Значение true устанавливает режим "только для чтение".</param>
+        public void SetReadOnly(bool isReadOnly)
+        {
+            PostIndexTextBox.ReadOnly = isReadOnly;
+            CountryTextBox.ReadOnly = isReadOnly;
+            CityTextBox.ReadOnly = isReadOnly;
+            StreetTextBox.ReadOnly = isReadOnly;
+            BuildingTextBox.ReadOnly = isReadOnly;
+            ApartmentTextBox.ReadOnly = isReadOnly;
         }
     }
 }
