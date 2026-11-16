@@ -1,4 +1,5 @@
-﻿using ObjectOrientedPractics.Model;
+﻿using System.ComponentModel;
+using ObjectOrientedPractics.Model;
 
 namespace ObjectOrientedPractics.View.Tabs
 {
@@ -16,6 +17,28 @@ namespace ObjectOrientedPractics.View.Tabs
         /// Текущий выбранный покупатель.
         /// </summary>
         private Customer _currentCustomer;
+
+        /// <summary>
+        /// Возвращает и задает список покупателей.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public List<Customer> Customers
+        {
+            get
+            {
+                return _customers;
+            }
+            set
+            {
+                _customers = value ?? new List<Customer>();
+                CustomersListBox.Items.Clear();
+                foreach (var customer in _customers)
+                {
+                    CustomersListBox.Items.Add(customer.Fullname);
+                }
+                ClearCustomerInfo();
+            }
+        }
 
         /// <summary>
         /// Инициализирует новый экземпляр <see cref="CustomersTab"/>.
@@ -36,20 +59,20 @@ namespace ObjectOrientedPractics.View.Tabs
 
             IdTextBox.Text = _currentCustomer.Id.ToString();
             FullNameTextBox.Text = _currentCustomer.Fullname;
-            AddressTextBox.Text = _currentCustomer.Address;
+            CustomerAddressControl.Address = _currentCustomer.Address;
         }
 
         /// <summary>
         /// Обновляет поля выбранного покупателя.
         /// </summary>
-        private void UpdateButton_Click(object sender,EventArgs e)
+        private void UpdateButton_Click(object sender, EventArgs e)
         {
             if (CustomersListBox.SelectedIndex == -1) return;
 
             _currentCustomer = _customers[CustomersListBox.SelectedIndex];
 
             _currentCustomer.Fullname = FullNameTextBox.Text;
-            _currentCustomer.Address = AddressTextBox.Text;
+            _currentCustomer.Address = CustomerAddressControl.Address;
 
             CustomersListBox.Items[CustomersListBox.SelectedIndex] = _currentCustomer.Fullname;
         }
@@ -59,8 +82,16 @@ namespace ObjectOrientedPractics.View.Tabs
         /// </summary>
         private void AddButton_Click(object sender, EventArgs e)
         {
-            // Создание покупателя с базовыми значениями
-            Customer newCustomer = new Customer(FullNameTextBox.Text, AddressTextBox.Text);
+            Address currentInputAddress = CustomerAddressControl.Address;
+            Address newAddress = new Address(
+                currentInputAddress.Index,
+                currentInputAddress.Country,
+                currentInputAddress.City,
+                currentInputAddress.Street,
+                currentInputAddress.Building,
+                currentInputAddress.Apartment);
+
+            Customer newCustomer = new Customer(FullNameTextBox.Text, newAddress);
 
             _customers.Add(newCustomer);
             CustomersListBox.Items.Add(newCustomer.Fullname);
@@ -99,7 +130,7 @@ namespace ObjectOrientedPractics.View.Tabs
             _currentCustomer = null;
             IdTextBox.Clear();
             FullNameTextBox.Clear();
-            AddressTextBox.Clear();
+            CustomerAddressControl.ClearAddressInfo();
         }
     }
 }

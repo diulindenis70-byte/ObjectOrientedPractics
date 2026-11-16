@@ -38,11 +38,10 @@
             label1 = new Label();
             panel2 = new Panel();
             panel3 = new Panel();
+            CustomerAddressControl = new Controls.AddressControl();
             panel4 = new Panel();
-            AddressTextBox = new TextBox();
             FullNameTextBox = new TextBox();
             IdTextBox = new TextBox();
-            label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
@@ -162,11 +161,10 @@
             // 
             // panel3
             // 
+            panel3.Controls.Add(CustomerAddressControl);
             panel3.Controls.Add(panel4);
-            panel3.Controls.Add(AddressTextBox);
             panel3.Controls.Add(FullNameTextBox);
             panel3.Controls.Add(IdTextBox);
-            panel3.Controls.Add(label5);
             panel3.Controls.Add(label4);
             panel3.Controls.Add(label3);
             panel3.Controls.Add(label2);
@@ -176,22 +174,21 @@
             panel3.Size = new Size(474, 594);
             panel3.TabIndex = 1;
             // 
+            // CustomerAddressControl
+            // 
+            CustomerAddressControl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            CustomerAddressControl.BackColor = Color.White;
+            CustomerAddressControl.Location = new Point(3, 95);
+            CustomerAddressControl.Name = "CustomerAddressControl";
+            CustomerAddressControl.Size = new Size(468, 165);
+            CustomerAddressControl.TabIndex = 6;
+            // 
             // panel4
             // 
-            panel4.Location = new Point(3, 227);
+            panel4.Location = new Point(3, 266);
             panel4.Name = "panel4";
-            panel4.Size = new Size(468, 361);
+            panel4.Size = new Size(468, 322);
             panel4.TabIndex = 7;
-            // 
-            // AddressTextBox
-            // 
-            AddressTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            AddressTextBox.Location = new Point(88, 91);
-            AddressTextBox.MaximumSize = new Size(600, 130);
-            AddressTextBox.Multiline = true;
-            AddressTextBox.Name = "AddressTextBox";
-            AddressTextBox.Size = new Size(383, 130);
-            AddressTextBox.TabIndex = 6;
             // 
             // FullNameTextBox
             // 
@@ -209,15 +206,6 @@
             IdTextBox.ReadOnly = true;
             IdTextBox.Size = new Size(187, 27);
             IdTextBox.TabIndex = 4;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(3, 94);
-            label5.Name = "label5";
-            label5.Size = new Size(65, 20);
-            label5.TabIndex = 3;
-            label5.Text = "Address:";
             // 
             // label4
             // 
@@ -276,13 +264,12 @@
         private Button RemoveButton;
         private Panel panel3;
         private Panel panel4;
-        private TextBox AddressTextBox;
         private TextBox FullNameTextBox;
         private TextBox IdTextBox;
-        private Label label5;
         private Label label4;
         private Label label3;
         private Label label2;
         private Button UpdateButton;
+        private Controls.AddressControl CustomerAddressControl;
     }
 }

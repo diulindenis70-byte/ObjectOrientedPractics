@@ -6,7 +6,7 @@ namespace ObjectOrientedPractics.Model
     /// <summary>
     /// Товар.
     /// </summary>
-    internal class Item
+    public class Item
     {
         /// <summary>
         /// Id.
@@ -93,6 +93,11 @@ namespace ObjectOrientedPractics.Model
         }
 
         /// <summary>
+        /// Возвращает и задает категорию товара.
+        /// </summary>
+        public Category Category { get; set; }
+
+        /// <summary>
         /// Создает экземпляр <see cref="Item"/>.
         /// </summary>
         public Item()
@@ -106,11 +111,13 @@ namespace ObjectOrientedPractics.Model
         /// <param name="name">Имя товара должно быть меньше 200 символов.</param>
         /// <param name="info">Описание товара должно быть меньше 1000 символов.</param>
         /// <param name="cost">Стомиость товара должна быть в диапазоне от 0 до 100 000</param>
-        public Item(string name, string info, double cost)
+        /// <param name="category">Категория товара.</param>
+        public Item(string name, string info, double cost, Category category)
         {
             Name = name;
             Info = info;
             Cost = cost;
+            Category = category;
             _id = IdGenerator.GetNextId();
         }
     }

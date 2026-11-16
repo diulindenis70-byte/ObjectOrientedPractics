@@ -5,22 +5,22 @@ namespace ObjectOrientedPractics.Model
     /// <summary>
     /// Пользователь.
     /// </summary>
-    internal class Customer
+    public class Customer
     {
         /// <summary>
         /// Id.
         /// </summary>
         private readonly int _id;
-        
+
         /// <summary>
         /// Имя.
         /// </summary>
         private string _fullname;
 
         /// <summary>
-        /// Адресс.
+        /// Адрес.
         /// </summary>
-        private string _address;
+        private Address _address;
 
         /// <summary>
         /// Возвращает ID пользователя.
@@ -44,9 +44,9 @@ namespace ObjectOrientedPractics.Model
         }
 
         /// <summary>
-        /// Возвращает и задает адресс пользователя.
+        /// Возвращает и задает адрес пользователя.
         /// </summary>
-        public string Address
+        public Address Address
         {
             get
             {
@@ -54,28 +54,28 @@ namespace ObjectOrientedPractics.Model
             }
             set
             {
-                ValueValidator.AssertStringOnLength(value, 500, nameof(Address));
                 _address = value;
             }
         }
-        
+
         /// <summary>
-        /// Создает экземпляр <see cref="Customer"/>
+        /// Создает экземпляр <see cref="Customer"/>.
         /// </summary>
         public Customer()
         {
             _id = IdGenerator.GetNextId();
+            _address = new Address();
         }
 
         /// <summary>
-        /// Создает экземпляр <see cref="Customer"/>
+        /// Создает экземпляр <see cref="Customer"/>.
         /// </summary>
         /// <param name="fullname">Имя пользователя должно быть меньше 200 символов.</param>
-        /// <param name="adress">Адресс пользователя должен быть меньше 500 символов.</param>
-        public Customer(string fullname, string adress)
+        /// <param name="address">Адрес доставки пользователя.</param>
+        public Customer(string fullname, Address address)
         {
-            _fullname = fullname;
-            _address = adress;
+            Fullname = fullname;
+            Address = address;
             _id = IdGenerator.GetNextId();
         }
     }

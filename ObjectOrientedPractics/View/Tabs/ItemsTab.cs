@@ -1,9 +1,10 @@
-﻿using ObjectOrientedPractics.Model;
+﻿using System.ComponentModel;
+using ObjectOrientedPractics.Model;
 
 namespace ObjectOrientedPractics.View.Tabs
 {
     /// <summary>
-     /// Представляет пользовательский элемент управления для вкладки товаров.
+    /// Представляет пользовательский элемент управления для вкладки товаров.
     /// </summary>
     public partial class ItemsTab : UserControl
     {
@@ -18,11 +19,34 @@ namespace ObjectOrientedPractics.View.Tabs
         private Item _currentItem;
 
         /// <summary>
+        /// Возвращает и задает список товаров.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public List<Item> Items
+        {
+            get
+            {
+                return _items;
+            }
+            set
+            {
+                _items = value ?? new List<Item>();
+                ItemsListBox.Items.Clear();
+                foreach (var item in _items)
+                {
+                    ItemsListBox.Items.Add(item.Name);
+                }
+                ClearItemInfo();
+            }
+        }
+
+        /// <summary>
         /// Инициализирует новый экземпляр <see cref="ItemsTab"/>.
         /// </summary>
         public ItemsTab()
         {
             InitializeComponent();
+            CategoryComboBox.DataSource = Enum.GetValues(typeof(Category));
         }
 
         /// <summary>
@@ -38,6 +62,17 @@ namespace ObjectOrientedPractics.View.Tabs
             NameTextBox.Text = _currentItem.Name;
             CostTextBox.Text = _currentItem.Cost.ToString();
             DescriptionTextBox.Text = _currentItem.Info;
+            CategoryComboBox.SelectedItem = _currentItem.Category;
+        }
+
+        /// <summary>
+        /// Обновляет категорию выбранного товара при изменении значения в выпадающем списке.
+        /// </summary>
+        private void CategoryComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (_currentItem == null || CategoryComboBox.SelectedItem == null) return;
+
+            _currentItem.Category = (Category)CategoryComboBox.SelectedItem;
         }
 
         /// <summary>
@@ -52,6 +87,7 @@ namespace ObjectOrientedPractics.View.Tabs
             _currentItem.Name = NameTextBox.Text;
             _currentItem.Cost = Convert.ToDouble(CostTextBox.Text);
             _currentItem.Info = DescriptionTextBox.Text;
+            _currentItem.Category = (Category)CategoryComboBox.SelectedItem;
             ItemsListBox.Items[ItemsListBox.SelectedIndex] = NameTextBox.Text;
         }
 
@@ -60,8 +96,12 @@ namespace ObjectOrientedPractics.View.Tabs
         /// </summary>
         private void AddButton_Click(object sender, EventArgs e)
         {
-            double newCost = Convert.ToDouble(CostTextBox.Text);
-            Item newItem = new Item(NameTextBox.Text, DescriptionTextBox.Text, newCost);
+            double newCost = double.TryParse(CostTextBox.Text, out double parsedCost) ? parsedCost : 0;
+            Category selectedCategory = CategoryComboBox.SelectedItem != null
+                ? (Category)CategoryComboBox.SelectedItem
+                : Category.Electronics;
+
+            Item newItem = new Item(NameTextBox.Text, DescriptionTextBox.Text, newCost, selectedCategory);
 
             _items.Add(newItem);
             ItemsListBox.Items.Add(newItem.Name);
@@ -102,6 +142,7 @@ namespace ObjectOrientedPractics.View.Tabs
             NameTextBox.Clear();
             CostTextBox.Clear();
             DescriptionTextBox.Clear();
+            CategoryComboBox.SelectedIndex = -1;
         }
     }
 }

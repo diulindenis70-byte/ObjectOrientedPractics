@@ -1,3 +1,4 @@
+using ObjectOrientedPractics.Model;
 
 namespace ObjectOrientedPractics
 {
@@ -6,6 +7,10 @@ namespace ObjectOrientedPractics
     /// </summary>
     public partial class MainForm : Form
     {
+        /// <summary>
+        /// ’ранилище данных магазина.
+        /// </summary>
+        private Store _store = new();
 
         /// <summary>
         /// »нициализирует новый экземпл€р <see cref="MainForm"/>.
@@ -13,7 +18,9 @@ namespace ObjectOrientedPractics
         public MainForm()
         {
             InitializeComponent();
+
+            itemsTab1.Items = _store.Items;
+            customersTab1.Customers = _store.Customers;
         }
-        
     }
 }
