@@ -33,6 +33,13 @@ namespace ObjectOrientedPractics.View.Controls
             }
             set
             {
+                if (value == null)
+                {
+                    ClearAddressInfo();
+                    return;
+                }
+
+                _address = value;
                 UpdateAddressInfo();
             }
         }

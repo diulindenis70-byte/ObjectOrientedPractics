@@ -153,6 +153,7 @@ namespace ObjectOrientedPractics.View.Tabs
             idTextBox.Clear();
             createdTextBox.Clear();
             orderItemsListBox.Items.Clear();
+            OrderAddressControl.ClearAddressInfo();
             amountLabelValue.Text = "0,00";
         }
     }
