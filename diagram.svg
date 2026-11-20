@@ -1,0 +1,416 @@
+<svg class="dark " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2162.03 1446" width="2162.03" height="1446" id="m7c1a10__root" data-diagram-type="class">
+  <style data-mercat-style="universal">.mercat text{font-family:'Google Sans',Roboto,Arial,sans-serif;fill:var(--m-text);dominant-baseline:central}.mercat .t-code{font-family:'Google Sans Mono','Roboto Mono',monospace}.mercat .m-node .m-shape{fill:var(--m-node-fill);stroke:var(--m-node-stroke);stroke-width:1.5px}.mercat .m-edge .m-path{fill:none;stroke:var(--m-line);stroke-width:1.5px}.mercat .m-edge--dashed .m-path,.mercat .m-edge--dashed{stroke-dasharray:5 4}.mercat .m-edge-label .m-shape{fill:var(--m-pill-bg);stroke:var(--m-pill-border);stroke-width:1px}.mercat .m-edge-label .m-label{fill:var(--m-text-sec)}.mercat .t-label-strong{font-size:13px;font-weight:700}.mercat .t-edge{font-size:11px;font-weight:400}.mercat .t-code{font-size:11px;font-weight:400}.mercat .t-caption{font-size:10px;font-weight:500}.mercat .m-rt-underline{text-decoration:underline}</style>
+  <style data-mercat-style="theme-light">#m7c1a10__root{--m-bg:#ffffff;--m-text:#1f1f1f;--m-text-sec:#797979;--m-text-muted:#a5a5a5;--m-line:#545454;--m-node-fill:#f8f9fa;--m-node-stroke:#747775;--m-group-hdr:#f4f4f4;--m-pill-bg:#fbfbfb;--m-pill-border:#d7d7d7}</style>
+  <style data-mercat-style="theme-dark">#m7c1a10__root.dark{--m-bg:#1f1f1f;--m-text:#e3e3e3;--m-text-sec:#959595;--m-text-muted:#6d6d6d;--m-line:#bfbfbf;--m-node-fill:#2d2e30;--m-node-stroke:#8e918f;--m-group-hdr:#292929;--m-pill-bg:#232323;--m-pill-border:#424242}</style>
+  <style data-mercat-style="type">#m7c1a10__root .m-node&gt;.m-shape{stroke-width:1px}#m7c1a10__root .m-node .class-header{fill:var(--m-group-hdr);stroke:var(--m-node-stroke);stroke-width:1px}#m7c1a10__root .m-node .class-divider{fill:none;stroke:var(--m-node-stroke);stroke-width:1px}#m7c1a10__root .m-node .class-annotation{fill:var(--m-text-muted);font-style:italic}</style>
+  <style data-mercat-style="diagram">#m7c1a10__root .m-rt-fg-text-muted{fill:var(--m-text-muted)}#m7c1a10__root .m-rt-fg-text-sec{fill:var(--m-text-sec)}</style>
+  <g class="mercat mercat-class" transform="translate(22.67, -35)">
+    <defs>
+      <marker id="m7c1a10__mk-hollow-arrow" refX="1.3" refY="4.8" markerWidth="13.5" markerHeight="9.6" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+        <path d="M 0.6 0.6 L 12.9 4.8 L 0.6 9 Z" class="m-marker" fill="var(--m-bg)" stroke="var(--m-line)" stroke-width="1.25" stroke-linejoin="round"/>
+      </marker>
+      <marker id="m7c1a10__mk-hollow-diamond" refX="1" refY="4.8" markerWidth="14.8" markerHeight="9.6" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+        <path d="M 0.6 4.8 L 7.4 0.6 L 14.2 4.8 L 7.4 9 Z" class="m-marker" fill="var(--m-bg)" stroke="var(--m-line)" stroke-width="1.25" stroke-linejoin="round"/>
+      </marker>
+      <marker id="m7c1a10__mk-diamond" refX="13.45" refY="4.8" markerWidth="14.8" markerHeight="9.6" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+        <path d="M 0 4.8 L 7.4 0 L 14.8 4.8 L 7.4 9.6 Z" class="m-marker" fill="var(--m-line)" stroke="none"/>
+      </marker>
+      <marker id="m7c1a10__mk-open-arrow" refX="9.2" refY="3.8" markerWidth="10.8" markerHeight="7.6" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+        <path d="M 0.75 0.75 L 10.43 3.8 L 0.75 6.85" class="m-marker" fill="none" stroke="var(--m-line)" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round"/>
+      </marker>
+    </defs>
+    <g class="m-node m-edge" id="m7c1a10__edge__Order__PriorityOrder__0" data-role="connector">
+      <path d="M 1262.23 826.2 L 1262.23 916 L 1660.64 916 L 1660.64 954" class="m-path" marker-start="url(#m7c1a10__mk-hollow-arrow)"/>
+    </g>
+    <g class="m-node m-edge" id="m7c1a10__edge__Store__Item__0" data-role="connector">
+      <path d="M 1118.51 171.8 L 1118.51 194 L 1019.29 194 L 1019.29 492 L 832.18 492 L 832.18 716 L 431.44 716 L 431.44 1054" class="m-path" marker-start="url(#m7c1a10__mk-hollow-diamond)"/>
+    </g>
+    <g class="m-node m-edge" id="m7c1a10__edge__Store__Customer__0" data-role="connector">
+      <path d="M 1118.51 171.8 L 1118.51 218" class="m-path" marker-start="url(#m7c1a10__mk-hollow-diamond)"/>
+    </g>
+    <g class="m-node m-edge" id="m7c1a10__edge__Customer__Address__0" data-role="connector">
+      <path d="M 1217.73 487.35 L 1217.73 559 L 1070.4 559 L 1070.4 745 L 694.93 745 L 694.93 874" class="m-path" marker-start="url(#m7c1a10__mk-diamond)"/>
+    </g>
+    <g class="m-node m-edge" id="m7c1a10__edge__Customer__Cart__0" data-role="connector">
+      <path d="M 1217.73 487.35 L 1217.73 543 L 951.29 543 L 951.29 616" class="m-path" marker-start="url(#m7c1a10__mk-diamond)"/>
+    </g>
+    <g class="m-node m-edge" id="m7c1a10__edge__Customer__Order__0" data-role="connector">
+      <path d="M 1217.73 487.35 L 1217.73 546" class="m-path" marker-start="url(#m7c1a10__mk-diamond)"/>
+    </g>
+    <g class="m-node m-edge" id="m7c1a10__edge__Cart__Item__0" data-role="connector">
+      <path d="M 951.29 757.8 L 951.29 835.8 L 138.7 835.8 L 138.7 904" class="m-path" marker-start="url(#m7c1a10__mk-hollow-diamond)"/>
+    </g>
+    <g class="m-node m-edge" id="m7c1a10__edge__Order__Address__0" data-role="connector">
+      <path d="M 1262.23 815.35 L 1262.23 854 L 918.43 854 L 918.43 874" class="m-path" marker-start="url(#m7c1a10__mk-diamond)"/>
+    </g>
+    <g class="m-node m-edge" id="m7c1a10__edge__Order__Item__0" data-role="connector">
+      <path d="M 1262.23 827.8 L 1262.23 847.4 L 285.07 847.4 L 285.07 904" class="m-path" marker-start="url(#m7c1a10__mk-hollow-diamond)"/>
+    </g>
+    <g class="m-node m-edge" id="m7c1a10__edge__Order__OrderStatus__0" data-role="connector">
+      <path d="M 1262.23 814 L 1262.23 934.4" class="m-path" marker-end="url(#m7c1a10__mk-open-arrow)"/>
+    </g>
+    <g class="m-node m-edge" id="m7c1a10__edge__Item__Category__0" data-role="connector">
+      <path d="M 211.89 1172 L 211.89 1260.4" class="m-path" marker-end="url(#m7c1a10__mk-open-arrow)"/>
+    </g>
+    <g class="m-node m-edge m-edge--dashed" id="m7c1a10__edge__Item__IdGenerator__0" data-role="connector">
+      <path d="M 211.89 1172 L 211.89 1249 L 1217.73 1249 L 1217.73 1310.4" class="m-path" marker-end="url(#m7c1a10__mk-open-arrow)"/>
+    </g>
+    <g class="m-node m-edge m-edge--dashed" id="m7c1a10__edge__Item__ValueValidator__0" data-role="connector">
+      <path d="M 211.89 1172 L 211.89 1260 L 713.67 1260 L 713.67 1300.4" class="m-path" marker-end="url(#m7c1a10__mk-open-arrow)"/>
+    </g>
+    <g class="m-node m-edge m-edge--dashed" id="m7c1a10__edge__Customer__IdGenerator__0" data-role="connector">
+      <path d="M 1217.73 486 L 1217.73 591 L 1504.06 591 L 1504.06 843 L 2124.36 843 L 2124.36 1397.33 L 1293.44 1397.33" class="m-path" marker-end="url(#m7c1a10__mk-open-arrow)"/>
+    </g>
+    <g class="m-node m-edge m-edge--dashed" id="m7c1a10__edge__Customer__ValueValidator__0" data-role="connector">
+      <path d="M 1217.73 486 L 1217.73 607 L 1454.06 607 L 1454.06 875 L 2024.36 875 L 2024.36 1074 L 1085.73 1074 L 1085.73 1386.4" class="m-path" marker-end="url(#m7c1a10__mk-open-arrow)"/>
+    </g>
+    <g class="m-node m-edge m-edge--dashed" id="m7c1a10__edge__Order__IdGenerator__0" data-role="connector">
+      <path d="M 1262.23 814 L 1262.23 926 L 2074.36 926 L 2074.36 1378.67 L 1293.44 1378.67" class="m-path" marker-end="url(#m7c1a10__mk-open-arrow)"/>
+    </g>
+    <g class="m-node m-edge m-edge--dashed" id="m7c1a10__edge__Address__ValueValidator__0" data-role="connector">
+      <path d="M 806.68 1202 L 806.68 1300.4" class="m-path" marker-end="url(#m7c1a10__mk-open-arrow)"/>
+    </g>
+    <g class="m-node m-node--rect" id="m7c1a10__node__Store" data-role="vertex">
+      <rect x="1021.26" y="50" width="194.5" height="108" class="m-shape"/>
+      <rect x="1021.26" y="50" width="194.5" height="32" class="m-shape class-header"/>
+      <line x1="1021.26" y1="82" x2="1215.76" y2="82" class="class-divider"/>
+      <line x1="1021.26" y1="130" x2="1215.76" y2="130" class="class-divider"/>
+      <text x="1118.51" y="66" class="m-label t-label-strong" text-anchor="middle">Store</text>
+      <g class="m-node m-field" id="m7c1a10__field__Store__Items" data-role="member">
+        <text x="1029.26" y="96" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Items</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">List~Item~</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Store__Customers" data-role="member">
+        <text x="1029.26" y="116" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Customers</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">List~Customer~</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Store__Store_28_29" data-role="member">
+        <text x="1029.26" y="144" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Store()</tspan></text>
+      </g>
+    </g>
+    <g class="m-node m-node--rect" id="m7c1a10__node__Customer" data-role="vertex">
+      <rect x="1064.29" y="218" width="306.88" height="268" class="m-shape"/>
+      <rect x="1064.29" y="218" width="306.88" height="32" class="m-shape class-header"/>
+      <line x1="1064.29" y1="250" x2="1371.18" y2="250" class="class-divider"/>
+      <line x1="1064.29" y1="438" x2="1371.18" y2="438" class="class-divider"/>
+      <text x="1217.73" y="234" class="m-label t-label-strong" text-anchor="middle">Customer</text>
+      <g class="m-node m-field" id="m7c1a10__field__Customer___5fid" data-role="member">
+        <text x="1072.29" y="264" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_id</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">int</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Customer___5ffullname" data-role="member">
+        <text x="1072.29" y="284" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_fullname</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Customer___5faddress" data-role="member">
+        <text x="1072.29" y="304" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_address</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">Address</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Customer__Id" data-role="member">
+        <text x="1072.29" y="324" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Id</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">int</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Customer__Fullname" data-role="member">
+        <text x="1072.29" y="344" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Fullname</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Customer__Address" data-role="member">
+        <text x="1072.29" y="364" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Address</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">Address</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Customer__Cart" data-role="member">
+        <text x="1072.29" y="384" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Cart</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">Cart</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Customer__Orders" data-role="member">
+        <text x="1072.29" y="404" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Orders</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">List~Order~</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Customer__IsPriority" data-role="member">
+        <text x="1072.29" y="424" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>IsPriority</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">bool</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Customer__Customer_28_29" data-role="member">
+        <text x="1072.29" y="452" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Customer()</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Customer__Customer_28_29__1" data-role="member">
+        <text x="1072.29" y="472" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Customer(string fullname, Address address)</tspan></text>
+      </g>
+    </g>
+    <g class="m-node m-node--rect" id="m7c1a10__node__Cart" data-role="vertex">
+      <rect x="877.18" y="616" width="148.22" height="128" class="m-shape"/>
+      <rect x="877.18" y="616" width="148.22" height="32" class="m-shape class-header"/>
+      <line x1="877.18" y1="648" x2="1025.4" y2="648" class="class-divider"/>
+      <line x1="877.18" y1="716" x2="1025.4" y2="716" class="class-divider"/>
+      <text x="951.29" y="632" class="m-label t-label-strong" text-anchor="middle">Cart</text>
+      <g class="m-node m-field" id="m7c1a10__field__Cart___5fitems" data-role="member">
+        <text x="885.18" y="662" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_items</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">List~Item~</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Cart__Items" data-role="member">
+        <text x="885.18" y="682" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Items</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">List~Item~</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Cart__Amount" data-role="member">
+        <text x="885.18" y="702" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Amount</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">double</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Cart__Cart_28_29" data-role="member">
+        <text x="885.18" y="730" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Cart()</tspan></text>
+      </g>
+    </g>
+    <g class="m-node m-node--rect" id="m7c1a10__node__Order" data-role="vertex">
+      <rect x="1115.4" y="546" width="293.66" height="268" class="m-shape"/>
+      <rect x="1115.4" y="546" width="293.66" height="32" class="m-shape class-header"/>
+      <line x1="1115.4" y1="578" x2="1409.06" y2="578" class="class-divider"/>
+      <line x1="1115.4" y1="766" x2="1409.06" y2="766" class="class-divider"/>
+      <text x="1262.23" y="562" class="m-label t-label-strong" text-anchor="middle">Order</text>
+      <g class="m-node m-field" id="m7c1a10__field__Order___5fid" data-role="member">
+        <text x="1123.4" y="592" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_id</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">int</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Order___5fdate" data-role="member">
+        <text x="1123.4" y="612" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_date</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">DateTime</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Order___5fitems" data-role="member">
+        <text x="1123.4" y="632" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_items</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">List~Item~</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Order__Id" data-role="member">
+        <text x="1123.4" y="652" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Id</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">int</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Order__Date" data-role="member">
+        <text x="1123.4" y="672" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Date</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">DateTime</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Order__Address" data-role="member">
+        <text x="1123.4" y="692" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Address</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">Address</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Order__Status" data-role="member">
+        <text x="1123.4" y="712" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Status</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">OrderStatus</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Order__Items" data-role="member">
+        <text x="1123.4" y="732" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Items</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">List~Item~</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Order__Amount" data-role="member">
+        <text x="1123.4" y="752" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Amount</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">double</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Order__Order_28_29" data-role="member">
+        <text x="1123.4" y="780" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Order()</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Order__Order_28_29__1" data-role="member">
+        <text x="1123.4" y="800" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Order(Address address, List~Item~ items)</tspan></text>
+      </g>
+    </g>
+    <g class="m-node m-node--rect" id="m7c1a10__node__Item" data-role="vertex">
+      <rect x="-7.67" y="904" width="439.1" height="268" class="m-shape"/>
+      <rect x="-7.67" y="904" width="439.1" height="32" class="m-shape class-header"/>
+      <line x1="-7.67" y1="936" x2="431.44" y2="936" class="class-divider"/>
+      <line x1="-7.67" y1="1124" x2="431.44" y2="1124" class="class-divider"/>
+      <text x="211.89" y="920" class="m-label t-label-strong" text-anchor="middle">Item</text>
+      <g class="m-node m-field" id="m7c1a10__field__Item___5fid" data-role="member">
+        <text x="0.33" y="950" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_id</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">int</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Item___5fname" data-role="member">
+        <text x="0.33" y="970" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_name</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Item___5finfo" data-role="member">
+        <text x="0.33" y="990" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_info</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Item___5fcost" data-role="member">
+        <text x="0.33" y="1010" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_cost</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">double</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Item__Id" data-role="member">
+        <text x="0.33" y="1030" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Id</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">int</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Item__Name" data-role="member">
+        <text x="0.33" y="1050" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Name</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Item__Info" data-role="member">
+        <text x="0.33" y="1070" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Info</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Item__Cost" data-role="member">
+        <text x="0.33" y="1090" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Cost</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">double</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Item__Category" data-role="member">
+        <text x="0.33" y="1110" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Category</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">Category</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Item__Item_28_29" data-role="member">
+        <text x="0.33" y="1138" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Item()</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Item__Item_28_29__1" data-role="member">
+        <text x="0.33" y="1158" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Item(string name, string info, double cost, Category category)</tspan></text>
+      </g>
+    </g>
+    <g class="m-node m-node--rect" id="m7c1a10__node__Address" data-role="vertex">
+      <rect x="471.44" y="874" width="670.49" height="328" class="m-shape"/>
+      <rect x="471.44" y="874" width="670.49" height="32" class="m-shape class-header"/>
+      <line x1="471.44" y1="906" x2="1141.93" y2="906" class="class-divider"/>
+      <line x1="471.44" y1="1154" x2="1141.93" y2="1154" class="class-divider"/>
+      <text x="806.68" y="890" class="m-label t-label-strong" text-anchor="middle">Address</text>
+      <g class="m-node m-field" id="m7c1a10__field__Address___5findex" data-role="member">
+        <text x="479.44" y="920" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_index</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">int</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Address___5fcountry" data-role="member">
+        <text x="479.44" y="940" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_country</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Address___5fcity" data-role="member">
+        <text x="479.44" y="960" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_city</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Address___5fstreet" data-role="member">
+        <text x="479.44" y="980" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_street</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Address___5fbuilding" data-role="member">
+        <text x="479.44" y="1000" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_building</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Address___5fapartment" data-role="member">
+        <text x="479.44" y="1020" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_apartment</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Address__Index" data-role="member">
+        <text x="479.44" y="1040" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Index</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">int</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Address__Country" data-role="member">
+        <text x="479.44" y="1060" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Country</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Address__City" data-role="member">
+        <text x="479.44" y="1080" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>City</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Address__Street" data-role="member">
+        <text x="479.44" y="1100" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Street</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Address__Building" data-role="member">
+        <text x="479.44" y="1120" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Building</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Address__Apartment" data-role="member">
+        <text x="479.44" y="1140" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Apartment</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Address__Address_28_29" data-role="member">
+        <text x="479.44" y="1168" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Address()</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Address__Address_28_29__1" data-role="member">
+        <text x="479.44" y="1188" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>Address(int index, string country, string city, string street, string building, string apartment)</tspan></text>
+      </g>
+    </g>
+    <g class="m-node m-node--rect" id="m7c1a10__node__OrderStatus" data-role="vertex">
+      <rect x="1181.93" y="936" width="120" height="204" class="m-shape"/>
+      <rect x="1181.93" y="936" width="120" height="48" class="m-shape class-header"/>
+      <line x1="1181.93" y1="984" x2="1301.93" y2="984" class="class-divider"/>
+      <line x1="1181.93" y1="1132" x2="1301.93" y2="1132" class="class-divider"/>
+      <text x="1241.93" y="948" class="m-label class-annotation t-caption" text-anchor="middle">&lt;&lt;enumeration&gt;&gt;</text>
+      <text x="1241.93" y="966" class="m-label t-label-strong" text-anchor="middle">OrderStatus</text>
+      <g class="m-node m-field" id="m7c1a10__field__OrderStatus__New" data-role="member">
+        <text x="1189.93" y="998" class="m-label t-code" text-anchor="start">New</text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__OrderStatus__Processing" data-role="member">
+        <text x="1189.93" y="1018" class="m-label t-code" text-anchor="start">Processing</text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__OrderStatus__Assembly" data-role="member">
+        <text x="1189.93" y="1038" class="m-label t-code" text-anchor="start">Assembly</text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__OrderStatus__Sent" data-role="member">
+        <text x="1189.93" y="1058" class="m-label t-code" text-anchor="start">Sent</text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__OrderStatus__Delivered" data-role="member">
+        <text x="1189.93" y="1078" class="m-label t-code" text-anchor="start">Delivered</text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__OrderStatus__Returned" data-role="member">
+        <text x="1189.93" y="1098" class="m-label t-code" text-anchor="start">Returned</text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__OrderStatus__Abandoned" data-role="member">
+        <text x="1189.93" y="1118" class="m-label t-code" text-anchor="start">Abandoned</text>
+      </g>
+    </g>
+    <g class="m-node m-node--rect" id="m7c1a10__node__PriorityOrder" data-role="vertex">
+      <rect x="1341.93" y="954" width="637.43" height="168" class="m-shape"/>
+      <rect x="1341.93" y="954" width="637.43" height="32" class="m-shape class-header"/>
+      <line x1="1341.93" y1="986" x2="1979.36" y2="986" class="class-divider"/>
+      <line x1="1341.93" y1="1074" x2="1979.36" y2="1074" class="class-divider"/>
+      <text x="1660.64" y="970" class="m-label t-label-strong" text-anchor="middle">PriorityOrder</text>
+      <g class="m-node m-field" id="m7c1a10__field__PriorityOrder__DeliveryTimeRanges" data-role="member">
+        <text x="1349.93" y="1000" class="m-label t-code" text-anchor="start"><tspan class="m-rt-underline m-rt-fg-text-muted">+ </tspan><tspan class="m-rt-underline">DeliveryTimeRanges</tspan><tspan class="m-rt-underline m-rt-fg-text-muted">: </tspan><tspan class="m-rt-underline m-rt-fg-text-sec">string[]</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__PriorityOrder___5fdeliveryTime" data-role="member">
+        <text x="1349.93" y="1020" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">- </tspan><tspan>_deliveryTime</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__PriorityOrder__DeliveryDate" data-role="member">
+        <text x="1349.93" y="1040" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>DeliveryDate</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">DateTime</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__PriorityOrder__DeliveryTime" data-role="member">
+        <text x="1349.93" y="1060" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>DeliveryTime</tspan><tspan class="m-rt-fg-text-muted">: </tspan><tspan class="m-rt-fg-text-sec">string</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__PriorityOrder__PriorityOrder_28_29" data-role="member">
+        <text x="1349.93" y="1088" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>PriorityOrder()</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__PriorityOrder__PriorityOrder_28_29__1" data-role="member">
+        <text x="1349.93" y="1108" class="m-label t-code" text-anchor="start"><tspan class="m-rt-fg-text-muted">+ </tspan><tspan>PriorityOrder(Address address, List~Item~ items, DateTime deliveryDate, string deliveryTime)</tspan></text>
+      </g>
+    </g>
+    <g class="m-node m-node--rect" id="m7c1a10__node__Category" data-role="vertex">
+      <rect x="151.89" y="1262" width="120" height="204" class="m-shape"/>
+      <rect x="151.89" y="1262" width="120" height="48" class="m-shape class-header"/>
+      <line x1="151.89" y1="1310" x2="271.89" y2="1310" class="class-divider"/>
+      <line x1="151.89" y1="1458" x2="271.89" y2="1458" class="class-divider"/>
+      <text x="211.89" y="1274" class="m-label class-annotation t-caption" text-anchor="middle">&lt;&lt;enumeration&gt;&gt;</text>
+      <text x="211.89" y="1292" class="m-label t-label-strong" text-anchor="middle">Category</text>
+      <g class="m-node m-field" id="m7c1a10__field__Category__Electronics" data-role="member">
+        <text x="159.89" y="1324" class="m-label t-code" text-anchor="start">Electronics</text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Category__Clothing" data-role="member">
+        <text x="159.89" y="1344" class="m-label t-code" text-anchor="start">Clothing</text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Category__Books" data-role="member">
+        <text x="159.89" y="1364" class="m-label t-code" text-anchor="start">Books</text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Category__Food" data-role="member">
+        <text x="159.89" y="1384" class="m-label t-code" text-anchor="start">Food</text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Category__Sports" data-role="member">
+        <text x="159.89" y="1404" class="m-label t-code" text-anchor="start">Sports</text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Category__Home" data-role="member">
+        <text x="159.89" y="1424" class="m-label t-code" text-anchor="start">Home</text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__Category__Other" data-role="member">
+        <text x="159.89" y="1444" class="m-label t-code" text-anchor="start">Other</text>
+      </g>
+    </g>
+    <g class="m-node m-node--rect" id="m7c1a10__node__ValueValidator" data-role="vertex">
+      <rect x="527.63" y="1302" width="558.1" height="124" class="m-shape"/>
+      <rect x="527.63" y="1302" width="558.1" height="48" class="m-shape class-header"/>
+      <line x1="527.63" y1="1350" x2="1085.73" y2="1350" class="class-divider"/>
+      <line x1="527.63" y1="1358" x2="1085.73" y2="1358" class="class-divider"/>
+      <text x="806.68" y="1314" class="m-label class-annotation t-caption" text-anchor="middle">&lt;&lt;static&gt;&gt;</text>
+      <text x="806.68" y="1332" class="m-label t-label-strong" text-anchor="middle">ValueValidator</text>
+      <g class="m-node m-field" id="m7c1a10__field__ValueValidator__AssertStringOnLength_28_29" data-role="member">
+        <text x="535.63" y="1372" class="m-label t-code" text-anchor="start"><tspan class="m-rt-underline m-rt-fg-text-muted">+ </tspan><tspan class="m-rt-underline">AssertStringOnLength(string value, int maxLength, string propertyName)</tspan><tspan class="m-rt-underline m-rt-fg-text-muted">: </tspan><tspan class="m-rt-underline m-rt-fg-text-sec">$ void</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__ValueValidator__AssertOnPositiveValue_28_29" data-role="member">
+        <text x="535.63" y="1392" class="m-label t-code" text-anchor="start"><tspan class="m-rt-underline m-rt-fg-text-muted">+ </tspan><tspan class="m-rt-underline">AssertOnPositiveValue(double value, string propertyName)</tspan><tspan class="m-rt-underline m-rt-fg-text-muted">: </tspan><tspan class="m-rt-underline m-rt-fg-text-sec">$ void</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__ValueValidator__AssertOnRange_28_29" data-role="member">
+        <text x="535.63" y="1412" class="m-label t-code" text-anchor="start"><tspan class="m-rt-underline m-rt-fg-text-muted">+ </tspan><tspan class="m-rt-underline">AssertOnRange(double value, double min, double max, string propertyName)</tspan><tspan class="m-rt-underline m-rt-fg-text-muted">: </tspan><tspan class="m-rt-underline m-rt-fg-text-sec">$ void</tspan></text>
+      </g>
+    </g>
+    <g class="m-node m-node--rect" id="m7c1a10__node__IdGenerator" data-role="vertex">
+      <rect x="1143.62" y="1312" width="148.22" height="104" class="m-shape"/>
+      <rect x="1143.62" y="1312" width="148.22" height="48" class="m-shape class-header"/>
+      <line x1="1143.62" y1="1360" x2="1291.84" y2="1360" class="class-divider"/>
+      <line x1="1143.62" y1="1388" x2="1291.84" y2="1388" class="class-divider"/>
+      <text x="1217.73" y="1324" class="m-label class-annotation t-caption" text-anchor="middle">&lt;&lt;static&gt;&gt;</text>
+      <text x="1217.73" y="1342" class="m-label t-label-strong" text-anchor="middle">IdGenerator</text>
+      <g class="m-node m-field" id="m7c1a10__field__IdGenerator___5fid" data-role="member">
+        <text x="1151.62" y="1374" class="m-label t-code" text-anchor="start"><tspan class="m-rt-underline m-rt-fg-text-muted">- </tspan><tspan class="m-rt-underline">_id</tspan><tspan class="m-rt-underline m-rt-fg-text-muted">: </tspan><tspan class="m-rt-underline m-rt-fg-text-sec">int</tspan></text>
+      </g>
+      <g class="m-node m-field" id="m7c1a10__field__IdGenerator__GetNextId_28_29" data-role="member">
+        <text x="1151.62" y="1402" class="m-label t-code" text-anchor="start"><tspan class="m-rt-underline m-rt-fg-text-muted">+ </tspan><tspan class="m-rt-underline">GetNextId()</tspan><tspan class="m-rt-underline m-rt-fg-text-muted">: </tspan><tspan class="m-rt-underline m-rt-fg-text-sec">$ int</tspan></text>
+      </g>
+    </g>
+    <g class="m-edge-label">
+      <text x="417.44" y="1040" class="m-label m-endpoint-label t-edge" text-anchor="middle">0..*</text>
+    </g>
+    <g class="m-edge-label">
+      <text x="1104.51" y="204" class="m-label m-endpoint-label t-edge" text-anchor="middle">0..*</text>
+    </g>
+    <g class="m-edge-label">
+      <text x="680.93" y="860" class="m-label m-endpoint-label t-edge" text-anchor="middle">1</text>
+    </g>
+    <g class="m-edge-label">
+      <text x="937.29" y="602" class="m-label m-endpoint-label t-edge" text-anchor="middle">1</text>
+    </g>
+    <g class="m-edge-label">
+      <text x="1203.73" y="532" class="m-label m-endpoint-label t-edge" text-anchor="middle">0..*</text>
+    </g>
+    <g class="m-edge-label">
+      <text x="124.7" y="890" class="m-label m-endpoint-label t-edge" text-anchor="middle">0..*</text>
+    </g>
+    <g class="m-edge-label">
+      <text x="904.43" y="860" class="m-label m-endpoint-label t-edge" text-anchor="middle">1</text>
+    </g>
+    <g class="m-edge-label">
+      <text x="271.07" y="890" class="m-label m-endpoint-label t-edge" text-anchor="middle">0..*</text>
+    </g>
+  </g>
+</svg>
