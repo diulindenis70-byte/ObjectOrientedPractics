@@ -78,6 +78,18 @@ namespace ObjectOrientedPractics.Model
         }
 
         /// <summary>
+        /// Создает экземпляр класса <see cref="Order"/> без параметров.
+        /// </summary>
+        public Order()
+        {
+            _id = IdGenerator.GetNextId();
+            _date = DateTime.Now;
+            Address = new Address();
+            Items = new List<Item>();
+            Status = OrderStatus.New;
+        }
+
+        /// <summary>
         /// Создает экземпляр класса <see cref="Order"/>.
         /// </summary>
         /// <param name="address">Адрес доставки.</param>

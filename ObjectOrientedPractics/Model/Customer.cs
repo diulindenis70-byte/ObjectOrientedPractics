@@ -69,12 +69,20 @@ namespace ObjectOrientedPractics.Model
         public List<Order> Orders { get; set; }
 
         /// <summary>
+        /// Возвращает и задает признак приоритетного покупателя.
+        /// </summary>
+        public bool IsPriority { get; set; } = false;
+
+        /// <summary>
         /// Создает экземпляр <see cref="Customer"/>.
         /// </summary>
         public Customer()
         {
             _id = IdGenerator.GetNextId();
             _address = new Address();
+            Cart = new Cart();
+            Orders = new List<Order>();
+            IsPriority = false;
         }
 
         /// <summary>
@@ -89,6 +97,7 @@ namespace ObjectOrientedPractics.Model
             _id = IdGenerator.GetNextId();
             Cart = new Cart();
             Orders = new List<Order>();
+            IsPriority = false;
         }
     }
 }

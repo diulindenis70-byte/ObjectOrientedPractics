@@ -59,7 +59,18 @@ namespace ObjectOrientedPractics.View.Tabs
 
             IdTextBox.Text = _currentCustomer.Id.ToString();
             FullNameTextBox.Text = _currentCustomer.Fullname;
+            IsPriorityCheckBox.Checked = _currentCustomer.IsPriority;
             CustomerAddressControl.Address = _currentCustomer.Address;
+        }
+
+        /// <summary>
+        /// Обновляет свойство приоритетности выбранного покупателя при изменении флажка.
+        /// </summary>
+        private void IsPriorityCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (_currentCustomer == null) return;
+
+            _currentCustomer.IsPriority = IsPriorityCheckBox.Checked;
         }
 
         /// <summary>
@@ -72,6 +83,7 @@ namespace ObjectOrientedPractics.View.Tabs
             _currentCustomer = _customers[CustomersListBox.SelectedIndex];
 
             _currentCustomer.Fullname = FullNameTextBox.Text;
+            _currentCustomer.IsPriority = IsPriorityCheckBox.Checked;
             _currentCustomer.Address = CustomerAddressControl.Address;
 
             CustomersListBox.Items[CustomersListBox.SelectedIndex] = _currentCustomer.Fullname;
@@ -91,7 +103,10 @@ namespace ObjectOrientedPractics.View.Tabs
                 currentInputAddress.Building,
                 currentInputAddress.Apartment);
 
-            Customer newCustomer = new Customer(FullNameTextBox.Text, newAddress);
+            Customer newCustomer = new Customer(FullNameTextBox.Text, newAddress)
+            {
+                IsPriority = IsPriorityCheckBox.Checked
+            };
 
             _customers.Add(newCustomer);
             CustomersListBox.Items.Add(newCustomer.Fullname);
@@ -130,6 +145,7 @@ namespace ObjectOrientedPractics.View.Tabs
             _currentCustomer = null;
             IdTextBox.Clear();
             FullNameTextBox.Clear();
+            IsPriorityCheckBox.Checked = false;
             CustomerAddressControl.ClearAddressInfo();
         }
     }

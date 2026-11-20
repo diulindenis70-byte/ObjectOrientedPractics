@@ -38,6 +38,7 @@
             label1 = new Label();
             panel2 = new Panel();
             panel3 = new Panel();
+            IsPriorityCheckBox = new CheckBox();
             CustomerAddressControl = new Controls.AddressControl();
             panel4 = new Panel();
             FullNameTextBox = new TextBox();
@@ -161,6 +162,7 @@
             // 
             // panel3
             // 
+            panel3.Controls.Add(IsPriorityCheckBox);
             panel3.Controls.Add(CustomerAddressControl);
             panel3.Controls.Add(panel4);
             panel3.Controls.Add(FullNameTextBox);
@@ -174,20 +176,31 @@
             panel3.Size = new Size(474, 594);
             panel3.TabIndex = 1;
             // 
+            // IsPriorityCheckBox
+            // 
+            IsPriorityCheckBox.AutoSize = true;
+            IsPriorityCheckBox.Location = new Point(88, 92);
+            IsPriorityCheckBox.Name = "IsPriorityCheckBox";
+            IsPriorityCheckBox.Size = new Size(89, 24);
+            IsPriorityCheckBox.TabIndex = 8;
+            IsPriorityCheckBox.Text = "Is Priority";
+            IsPriorityCheckBox.UseVisualStyleBackColor = true;
+            IsPriorityCheckBox.CheckedChanged += IsPriorityCheckBox_CheckedChanged;
+            // 
             // CustomerAddressControl
             // 
             CustomerAddressControl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             CustomerAddressControl.BackColor = Color.White;
-            CustomerAddressControl.Location = new Point(3, 95);
+            CustomerAddressControl.Location = new Point(3, 125);
             CustomerAddressControl.Name = "CustomerAddressControl";
             CustomerAddressControl.Size = new Size(468, 165);
             CustomerAddressControl.TabIndex = 6;
             // 
             // panel4
             // 
-            panel4.Location = new Point(3, 266);
+            panel4.Location = new Point(3, 296);
             panel4.Name = "panel4";
-            panel4.Size = new Size(468, 322);
+            panel4.Size = new Size(468, 292);
             panel4.TabIndex = 7;
             // 
             // FullNameTextBox
@@ -224,9 +237,9 @@
             label3.Size = new Size(27, 20);
             label3.TabIndex = 1;
             label3.Text = "ID:";
-            // 
+            //
             // label2
-            // 
+            //
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label2.Location = new Point(3, 2);
@@ -234,9 +247,9 @@
             label2.Size = new Size(144, 20);
             label2.TabIndex = 0;
             label2.Text = "Selected Customer";
-            // 
+            //
             // CustomersTab
-            // 
+            //
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(tableLayoutPanel1);
@@ -251,9 +264,7 @@
             panel3.PerformLayout();
             ResumeLayout(false);
         }
-
         #endregion
-
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panel1;
         private ListBox CustomersListBox;
@@ -271,5 +282,6 @@
         private Label label2;
         private Button UpdateButton;
         private Controls.AddressControl CustomerAddressControl;
+        private CheckBox IsPriorityCheckBox;
     }
 }
